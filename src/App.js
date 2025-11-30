@@ -12,12 +12,12 @@ function App() {
   const[login,showlogin]=useState(false)
   return (
     <>
-    {login?<Login showlogin={showlogin}/>:<></>}
+    {/* {login?<Login showlogin={showlogin}/>:<></>} */}
     <div className='app'>
      <Navbar showlogin={showlogin} />
      <Routes>
       <Route path='/' element={<Home />}/>
-      <Route path='cart' element={<Cart />}/>
+      {/* <Route path='cart' element={<Cart />}/> */}
       <Route path='order' element={<Placeorder />}/>
 </Routes>
     </div>
